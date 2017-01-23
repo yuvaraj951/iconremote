@@ -7,7 +7,7 @@ mkdir -p ~/docker
 if [[ -e ~/docker/centos.tar ]]; then
   docker load -i ~/docker/centos.tar;
 else
-  docker build --tag "iconremote/buildcontainer" docker/buildcontainer
+  docker build --tag "grafana/buildcontainer" docker/buildcontainer
   docker save iconremote/buildcontainer > ~/docker/centos.tar;
 fi
 
