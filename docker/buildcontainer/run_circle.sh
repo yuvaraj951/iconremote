@@ -2,4 +2,4 @@
 
 docker run -i -t \
   -v /home/ubuntu/.go_workspace:/go \
-  --name gfbuild iconremote/buildcontainer
+  --name gfbuild grafana/buildcontainer
