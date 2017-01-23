@@ -15,7 +15,7 @@ RUN mkdir -p /go/src /go/bin && chmod -R 777 /go
 ENV GOPATH /go
 ENV PATH /go/bin:$PATH
 
-RUN cd  /usr/src/go/github.com/yuvaraj951 && mv yuvaraj951 grafana 
+RUN cd  /usr/src/go/src/github.com/yuvaraj951 && mv yuvaraj951 grafana 
    
 
 WORKDIR /go/src/github.com/grafana/grafana
